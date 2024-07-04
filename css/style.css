@@ -610,6 +610,14 @@ pre code {
   padding-right: 10px;
 }
 
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media (min-width: 576px) {
   .custom-col {
     flex: 0 0 20%;
