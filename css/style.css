@@ -615,7 +615,22 @@ pre code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
 }
+
+.navbar-brand img {
+  width: auto;
+  max-height: 70px;
+  display: block; /* Ensures no extra space below the image */
+}
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 80%; /* Adjust as needed */
+  }
+}
+
 
 
 @media (min-width: 576px) {
