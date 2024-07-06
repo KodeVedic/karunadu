@@ -14171,3 +14171,51 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+
+/* --ProductsCategories-- */
+.products-categories-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.products-categories-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #51A8B1;
+}
+
+.products-categories-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.category-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.category-item:hover .category-image {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
