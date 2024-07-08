@@ -14219,3 +14219,61 @@ textarea.form-control {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+  /* --InvestmentCalculator-- */
+
+  .investment-calculator-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .budget-planning {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .budget-planning h3 {
+    color: #f57c00;
+  }
+  
+  .budget-input {
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .plan-budget-button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .plan-budget-button:hover {
+    background-color: #e65100;
+  }
+  
+  .budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .budget-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .budget-table td:first-child {
+    text-align: left;
+  }
+  
+  .budget-table td:last-child {
+    text-align: right;
+  }
