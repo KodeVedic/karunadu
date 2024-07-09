@@ -12035,6 +12035,7 @@ h5,
 
 .slider-text .breadcrumbs span {
   color: rgba(0, 0, 0, 0.7);
+  
 }
 
 .slider-text .breadcrumbs span i {
@@ -12059,6 +12060,7 @@ h5,
 .slider-text .bread {
   font-weight: 500 !important;
   position: relative;
+  color: white;
 }
 
 .owl-carousel {
