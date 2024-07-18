@@ -377,7 +377,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
@@ -14295,3 +14295,10 @@ textarea.form-control {
   .budget-table td:last-child {
     text-align: right;
   }
+
+  .rounded-corners {
+   
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    /* You can also add other styles such as border, box-shadow, etc. */
+}
