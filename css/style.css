@@ -14312,6 +14312,31 @@ textarea.form-control {
 }
 
 
+.rounded-corners-r {
+   
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  /* You can also add other styles such as border, box-shadow, etc. */
+}
+
+.rounded-corners-f {
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  /* You can also add other styles such as border, box-shadow, etc. */
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  /* You can also add other styles such as border, box-shadow, etc. */
+}
+
+.rounded-corners-ff {
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  /* You can also add other styles such as border, box-shadow, etc. */
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  /* You can also add other styles such as border, box-shadow, etc. */
+}
+
 
 .btnn {
   background: #51A8B1; 
