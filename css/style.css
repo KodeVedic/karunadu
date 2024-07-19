@@ -3021,6 +3021,8 @@ fieldset:disabled a.btn {
 .btn-primary.focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  color: #fff;
+
 }
 
 .btn-primary.disabled,
@@ -4845,10 +4847,11 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  color: #ffffff !important;
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #ffffff;
   pointer-events: none;
   cursor: default;
 }
