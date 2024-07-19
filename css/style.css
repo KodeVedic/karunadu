@@ -4847,6 +4847,12 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  /* color: #ffffff !important; */
+}
+
+.nav-link-btn:hover,
+.nav-link-btn:focus {
+  text-decoration: none;
   color: #ffffff !important;
 }
 
@@ -11919,7 +11925,6 @@ h5,
 .ftco-navbar-light.scrolled .nav-link {
   padding-top: 0.9rem !important;
   padding-bottom: 0.9rem !important;
-  color: #000000 !important;
 }
 
 .ftco-navbar-light.scrolled .nav-link.active {
