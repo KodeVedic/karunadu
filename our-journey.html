@@ -21,7 +21,40 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="timeline.css">
+  <style>
+    .image-container {
+      position: relative;
+      height: 800px;
+      overflow: hidden;
+      margin: 50px auto; /* Center the container */
+    }
+
+    .image {
+      position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Adjust to cover the container */
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease; /* Fade in effect */
+    animation: slideIn 1s ease forwards; /* Animation for sliding in */
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideIn {
+    from {
+        left: -100%; /* Start position off-screen */
+    }
+    to {
+        left: 2px; /* End position */
+    }
+
+    }
+   
+   
+  </style>
 
 </head>
 
@@ -45,7 +78,7 @@
                     class="sr-only">Twitter</i></span></a>
               <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
                     class="sr-only">Instagram</i></span></a>
-          
+
             </p>
           </div>
         </div>
@@ -71,8 +104,9 @@
           <li class="nav-item"><a href="our-brand.html" class="nav-link">Our Brands</a></li>
           <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
 
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <button class="btn btnn btn-primary px-4"><a href="franchise.html" class="nav-link">Apply Franchise</a></button>
+					<li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <button class="btn btnn btn-primary px-4"><a href="franchise.html" class="nav-link">Apply
+              Franchise</a></button>
 
         </ul>
       </div>
@@ -95,16 +129,56 @@
     </div>
   </section>
 
-<!--  
+
   <section class="container">
     <div class=" ftco-animate ">
-      <div class="block-7 ">
+      <!-- <div class="block-7 ">
         <img src="images/img/1.png" alt="KARUNADU Logo"
           style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+      </div> -->
+      <div class="image-container">
+        <img class="image" src="images/flow/3.png" alt="Image 7">
+        <img class="image" src="images/flow/3.png" alt="Image 7">
+        <img class="image" src="images/flow/7.png" alt="Image 3">
+        <img class="image" src="images/flow/6.png" alt="Image 4">
+        <img class="image" src="images/flow/5.png" alt="Image 5">
+        <img class="image" src="images/flow/4.png" alt="Image 6">
+        <img class="image" src="images/img/1.png" alt="KARUNADU Logo" />
       </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.image');
+            let currentIndex = 0;
+            
+            function showNextImage() {
+                // Fade out the current image
+                if (images[currentIndex]) {
+                    // images[currentIndex].style.opacity = 0;
+                }
+
+                // Move to the next image
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    // currentIndex = 0; // Restart the sequence
+                }
+
+                // Fade in the next image
+                if (images[currentIndex]) {
+                    images[currentIndex].style.opacity = 1;
+                }
+            }
+
+            // Set an interval to change images every second
+            setInterval(showNextImage, 500); // Change interval time as needed (1000ms = 1 second)
+            
+            // Initialize by showing the first image
+            showNextImage();
+        });
+    </script>
     </div>
-  </section> -->
-  <div class="timeline">
+  </section>
+  <!-- <div class="timeline">
     <div class="timeline-item left">
         <div class="timeline-date">2024</div>
         <div class="timeline-content">
@@ -136,7 +210,7 @@
         </div>
     </div>
     <!-- Add more timeline items as needed -->
-</div>
+  </div> -->
 
   <section id="tranding">
     <div class="row justify-content-center mb-5">
@@ -145,7 +219,7 @@
         <h2 class="mb-3">Pillars of Our Success</h2>
       </div>
     </div>
-    <div class="px-4 mx-4  " >
+    <div class="px-4 mx-4  ">
       <div class="swiper tranding-slider">
         <div class="swiper-wrapper">
           <!-- Slide-start -->
@@ -153,10 +227,10 @@
             <div class="tranding-slide-img">
               <img src="images/team/Shankar.png" alt="Tranding">
             </div>
-           
+
             <div class="text-center">
               <h3>Mr. Shankar Dharman</h3>
-              <span >Founder & Chairman</span>
+              <span>Founder & Chairman</span>
             </div>
           </div>
           <!-- Slide-end -->
@@ -166,7 +240,7 @@
               <img src="images/team/Poornima.png" alt="Tranding">
             </div>
             <div class="tranding-slide-content">
-             
+
             </div>
             <div class="text-center">
               <h3>Mrs. Poornima K M</h3>
@@ -181,7 +255,7 @@
             </div>
             <div class="tranding-slide-content">
               <!-- <h1 class="food-price">$40</h1> -->
-              
+
             </div>
             <div class="text-center">
               <h3> Mrs. Anupama Jeevan</h3>
@@ -195,7 +269,7 @@
             <div class="tranding-slide-img">
               <img src="images/team/Jayashre.png" alt="Tranding">
             </div>
-            
+
             <div class="text-center">
               <h3>Mrs. Jaya Shree Srinivasan</h3>
               <span class="position mb-2">Systems Analyst</span>
@@ -207,24 +281,24 @@
             <div class="tranding-slide-img">
               <img src="images/team/Venk.png" alt="Tranding">
             </div>
-            
+
             <div class="text-center">
               <h3>Mr. Venkatesan .K</h3>
               <span class="position mb-2">Chief Operating Officer</span>
             </div>
           </div>
           <!-- Slide-end -->
-         
+
         </div>
 
-      
+
 
       </div>
     </div>
   </section>
 
 
- 
+
 
 
   <section id="tranding">
@@ -233,7 +307,7 @@
         <span class="subheading">Our Team</span><br>
         <h2 class="mb-3">Channel Partners</h2>
 
-        <img src="images/sss.png" height="100"/>
+        <img src="images/sss.png" height="100" />
       </div>
     </div>
     <div class="px-4 mx-4">
@@ -244,7 +318,7 @@
             <div class="tranding-slide-img">
               <img src="images/team/Aaqil.png" alt="Tranding">
             </div>
-            
+
             <div class="text-center">
               <h3>Mr. M Aaqil</h3>
               <span class="position mb-2">Founder & CEO</span>
@@ -367,7 +441,7 @@
             </div>
           </div>
           <!-- Slide-end -->
-         
+
         </div>
 
         <!-- <div class="tranding-slider-control pt-5">
@@ -389,11 +463,15 @@
       <div class="row justify-content-center mb-5">
         <div class="col-md-8 col-lg-10 text-center heading-section ftco-animate">
 
-          <img src="images/img/logo2.png" alt="KARUNADU Logo" height="100"/>
+          <img src="images/img/logo2.png" alt="KARUNADU Logo" height="100" />
 
           <!-- <h2 class="mb-3">	Sri Poornima Enterprises</h2> -->
         </div>
-        <p class="container text-center">Sri Poornima Enterprises facilitates a robust wholesale staple distribution network at the core of Oltowns operations. With deep roots in the agricultural sector, Oltowns acts as a vital link between farmers and retailers, ensuring a seamless supply chain for essential commodities. By collecting and distributing staples directly from the source, Oltowns guarantees the freshness and authenticity of its products while supporting local farming communities.
+        <p class="container text-center">Sri Poornima Enterprises facilitates a robust wholesale staple distribution
+          network at the core of Oltowns operations. With deep roots in the agricultural sector, Oltowns acts as a vital
+          link between farmers and retailers, ensuring a seamless supply chain for essential commodities. By collecting
+          and distributing staples directly from the source, Oltowns guarantees the freshness and authenticity of its
+          products while supporting local farming communities.
 
         </p>
       </div>
@@ -475,7 +553,7 @@
     </div>
   </section>
 
-  
+
 
 
   <section class="ftco-section">
@@ -728,9 +806,9 @@
   </section>
 
   <footer class="ftco-footer">
-		<div class="container">
-			<div class="row mb-5">
-<!-- 				
+    <div class="container">
+      <div class="row mb-5">
+        <!-- 				
 				<div class="col-sm-12 col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2 logo"><a href="#">Contact Details</a></h2>
@@ -743,83 +821,86 @@
 					</div>
 				</div> 
 				 -->
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Quick Link</h2>
-						<ul class="list-unstyled">
-							<li><a href="our-journey.html"><span class="fa fa-chevron-right mr-2"></span>Our Journey</a></li>
-							<li><a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-							<li><a href="our-brand.html"><span class="fa fa-chevron-right mr-2"></span>Our Brand</a></li>
-							<li><a href="franchise.html"><span class="fa fa-chevron-right mr-2"></span>Apply for Franchise</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Useful Links						</h2>
-						<ul class="list-unstyled">
-							<li><a href="privacy-policy.html"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
-							<li><a href="faq.html"><span class="fa fa-chevron-right mr-2"></span>FAQs</a></li>
-							<li><a href="blog.html"><span class="fa fa-chevron-right mr-2"></span>Blogs</a></li>
-							<li><a href="terms-and-condition.html"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Company</h2>
-						<ul class="list-unstyled">
-							<li><a href="our-journey.html"><span class="fa fa-chevron-right mr-2"></span>Our Journey</a></li>
-							<li><a href="blog.html"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-							<li><a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-							<li><a href="career.html"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map marker"></span><span class="text">No.51, 3rd Floor, 2nd Cross,
-									P&T Colony, RT Nagar Post,
-									Bengaluru, Karnataka 560032.
-									
-									</span></li>
-								<li><a href="tel:+918105778655"><span class="icon fa fa-phone"></span><span class="text">+918105778655</span></a></li>
-								<li><a href="mailto:info@karunaduproducts.com"><span class="icon fa fa-paper-plane pr-4"></span><span
-											class="text">info@karunaduproducts.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid px-0 py-5 bg-black">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Quick Link</h2>
+            <ul class="list-unstyled">
+              <li><a href="our-journey.html"><span class="fa fa-chevron-right mr-2"></span>Our Journey</a></li>
+              <li><a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+              <li><a href="our-brand.html"><span class="fa fa-chevron-right mr-2"></span>Our Brand</a></li>
+              <li><a href="franchise.html"><span class="fa fa-chevron-right mr-2"></span>Apply for Franchise</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Useful Links </h2>
+            <ul class="list-unstyled">
+              <li><a href="privacy-policy.html"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
+              <li><a href="faq.html"><span class="fa fa-chevron-right mr-2"></span>FAQs</a></li>
+              <li><a href="blog.html"><span class="fa fa-chevron-right mr-2"></span>Blogs</a></li>
+              <li><a href="terms-and-condition.html"><span class="fa fa-chevron-right mr-2"></span>Term &amp;
+                  Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Company</h2>
+            <ul class="list-unstyled">
+              <li><a href="our-journey.html"><span class="fa fa-chevron-right mr-2"></span>Our Journey</a></li>
+              <li><a href="blog.html"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+              <li><a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+              <li><a href="career.html"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map marker"></span><span class="text">No.51, 3rd Floor, 2nd Cross,
+                    P&T Colony, RT Nagar Post,
+                    Bengaluru, Karnataka 560032.
 
-						<p class="mb-0" style="color: rgba(255,255,255,.5);"> @2024 - <a href="https://adfluxagency.com">AdFlux Agency</a> - All Rights Reserved</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+                  </span></li>
+                <li><a href="tel:+918105778655"><span class="icon fa fa-phone"></span><span
+                      class="text">+918105778655</span></a></li>
+                <li><a href="mailto:info@karunaduproducts.com"><span class="icon fa fa-paper-plane pr-4"></span><span
+                      class="text">info@karunaduproducts.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 py-5 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <p class="mb-0" style="color: rgba(255,255,255,.5);"> @2024 - <a href="https://adfluxagency.com">AdFlux
+                Agency</a> - All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
-		<!-- <svg class="circular" width="48px" height="48px">
+    <!-- <svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 				
 		</svg> -->
-		<img src="/images/klogo.gif" alt="Logo" class="loader-logo">
+    <img src="/images/klogo.gif" alt="Logo" class="loader-logo">
 
-	</div>
+  </div>
 
 
   <script src="js/jquery.min.js"></script>
