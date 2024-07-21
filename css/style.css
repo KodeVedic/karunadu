@@ -109,6 +109,20 @@ abbr[data-original-title] {
   text-decoration-skip-ink: none;
 }
 
+/* logo */
+#ftco-loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo {
+  position: absolute;
+  width: 50px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
