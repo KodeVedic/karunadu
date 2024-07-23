@@ -602,10 +602,8 @@ pre code {
 
 
 /* investment cal */
-
-
-body {
-  font-family: Arial, sans-serif;
+.hidden-link {
+  display: none;
 }
 
 .container {
