@@ -606,6 +606,12 @@ pre code {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
 .container {
   max-width: 800px;
   margin: auto;
@@ -11860,7 +11866,7 @@ h5,
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    color: #fff;
+    color: #677d6c;
   }
 }
 
@@ -12063,9 +12069,21 @@ h5,
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   position: relative;
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    height: 400px; /* Reduced height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-wrap {
+    height: 300px; /* Further reduced height for smaller mobile devices */
+  }
 }
 
 .hero-wrap.hero-wrap-2 {
