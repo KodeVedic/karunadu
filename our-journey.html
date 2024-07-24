@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Our Journey-Products</title>
+  <title>Our Journey-Products</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -28,34 +28,39 @@
       position: relative;
       height: 800px;
       overflow: hidden;
-      margin: 50px auto; /* Center the container */
+      margin: 50px auto;
+      /* Center the container */
     }
 
     .image {
       position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Adjust to cover the container */
-            border-radius: 10px;
-            opacity: 0;
-            transition: opacity 0.5s ease; /* Fade in effect */
-    animation: slideIn 1s ease forwards; /* Animation for sliding in */
-}
-
-/* Keyframes for sliding in from the left */
-@keyframes slideIn {
-    from {
-        left: -100%; /* Start position off-screen */
-    }
-    to {
-        left: 2px; /* End position */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Adjust to cover the container */
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      /* Fade in effect */
+      animation: slideIn 1s ease forwards;
+      /* Animation for sliding in */
     }
 
+    /* Keyframes for sliding in from the left */
+    @keyframes slideIn {
+      from {
+        left: -100%;
+        /* Start position off-screen */
+      }
+
+      to {
+        left: 2px;
+        /* End position */
+      }
+
     }
-   
-   
   </style>
 
 </head>
@@ -106,7 +111,7 @@
           <li class="nav-item"><a href="our-brand.html" class="nav-link">Our Brands</a></li>
           <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
 
-					<li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
           <button class="btn btnn btn-primary px-4"><a href="franchise.html" class="nav-link">Apply
               Franchise</a></button>
 
@@ -149,70 +154,37 @@
       </div>
 
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.image');
-            let currentIndex = 0;
-            
-            function showNextImage() {
-                // Fade out the current image
-                if (images[currentIndex]) {
-                    // images[currentIndex].style.opacity = 0;
-                }
+        document.addEventListener('DOMContentLoaded', function () {
+          const images = document.querySelectorAll('.image');
+          let currentIndex = 0;
 
-                // Move to the next image
-                currentIndex++;
-                if (currentIndex >= images.length) {
-                    // currentIndex = 0; // Restart the sequence
-                }
-
-                // Fade in the next image
-                if (images[currentIndex]) {
-                    images[currentIndex].style.opacity = 1;
-                }
+          function showNextImage() {
+            // Fade out the current image
+            if (images[currentIndex]) {
+              // images[currentIndex].style.opacity = 0;
             }
 
-            // Set an interval to change images every second
-            setInterval(showNextImage, 500); // Change interval time as needed (1000ms = 1 second)
-            
-            // Initialize by showing the first image
-            showNextImage();
+            // Move to the next image
+            currentIndex++;
+            if (currentIndex >= images.length) {
+              // currentIndex = 0; // Restart the sequence
+            }
+
+            // Fade in the next image
+            if (images[currentIndex]) {
+              images[currentIndex].style.opacity = 1;
+            }
+          }
+
+          // Set an interval to change images every second
+          setInterval(showNextImage, 500); // Change interval time as needed (1000ms = 1 second)
+
+          // Initialize by showing the first image
+          showNextImage();
         });
-    </script>
+      </script>
     </div>
   </section>
-  <!-- <div class="timeline">
-    <div class="timeline-item left">
-        <div class="timeline-date">2024</div>
-        <div class="timeline-content">
-            <h2>HERE WE ARE</h2>
-            <p>Description of the event.</p>
-        </div>
-    </div>
-    <div class="timeline-item right">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-content">
-            <h2>KEEP GOING</h2>
-            <p>Description of the event.</p>
-        </div>
-    </div>
-
-    <div class="timeline-item left">
-        <div class="timeline-date">2019</div>
-        <div class="timeline-content">
-            <h2>LET'S DO IT</h2>
-            <p>Description of the event.</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="timeline-date">2017</div>
-        <div class="timeline-content">
-            <h2>FIRST STEPS</h2>
-            <p>Description of the event.</p>
-        </div>
-    </div>
-    <!-- Add more timeline items as needed -->
-  </div> -->
 
   <section id="tranding">
     <div class="row justify-content-center mb-5">
@@ -333,21 +305,8 @@
               <img src="images/team/Blesson.jpeg" alt="Tranding">
             </div>
             <div class="tranding-slide-content">
-              <!-- <h1 class="food-price">$20</h1> -->
               <div class="tranding-slide-content-bottom">
-                <!-- <h2 class="food-name">
-                  Meat Ball
-                </h2> -->
-                <!-- <h3 class="food-rating">
-                  <span>4.5</span>
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </h3> -->
+
               </div>
             </div>
             <div class="text-center">
@@ -362,21 +321,8 @@
               <img src="images/team/Arjun.jpeg" alt="Tranding">
             </div>
             <div class="tranding-slide-content">
-              <!-- <h1 class="food-price">$40</h1> -->
               <div class="tranding-slide-content-bottom">
-                <!-- <h2 class="food-name">
-                  Burger
-                </h2> -->
-                <!-- <h3 class="food-rating">
-                  <span>4.5</span>
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </h3> -->
+
               </div>
             </div>
             <div class="text-center">
@@ -391,20 +337,10 @@
               <img src="images/team/Diwakar.jpeg" alt="Tranding">
             </div>
             <div class="tranding-slide-content">
-              <!-- <h1 class="food-price">$15</h1> -->
               <div class="tranding-slide-content-bottom">
-                <!-- <h2 class="food-name">
-                  Frish Curry
-                </h2> -->
+
                 <h3 class="food-rating">
-                  <!-- <span>4.5</span> -->
-                  <!-- <div class="rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div> -->
+
                 </h3>
               </div>
             </div>
@@ -421,7 +357,7 @@
             </div>
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
-                
+
               </div>
             </div>
             <div class="text-center">
@@ -430,14 +366,14 @@
             </div>
           </div>
           <!-- Slide-end -->
-            <!-- Slide-start -->
+          <!-- Slide-start -->
           <div class="swiper-slide tranding-slide">
             <div class="tranding-slide-img">
               <img src="images/team/Kisor.jpeg" alt="Tranding">
             </div>
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
-                
+
               </div>
             </div>
             <div class="text-center">
@@ -449,15 +385,7 @@
 
         </div>
 
-        <!-- <div class="tranding-slider-control pt-5">
-          <div class="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div class="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div> -->
+
 
       </div>
     </div>
@@ -513,12 +441,7 @@
             <h3>Mr. Shankar Dharman</h3>
             <p>Founder & Chairman</p>
 
-            <!-- <a href="https://vimeo.com/45830194"
-							class="play-video popup-vimeo d-flex align-items-center mt-4">
-							<div class="icon d-flex align-items-center justify-content-center"><span
-									class="fa fa-play"></span></div>
-							<span class="watch">Watch Our Consultant Video</span>
-						</a> -->
+
           </div>
 
         </div>
@@ -670,11 +593,14 @@
           <div class="carousel-testimony owl-carousel ftco-owl">
             <div class="item">
               <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
                 <div class="text">
                   <p class="mb-4">
-                    ಓಲ್ಟೌನ್‌ ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ಫ್ರ್ಯಾಂಚೈಸಿ ಯವರು ನನ್ನ ಕನಸನ್ನು ನನಸಾಗಿಸಿದರು! ಅವರ ಸಮಗ್ರ ಬೆಂಬಲ ಮತ್ತು ತರಬೇತಿಯು ಅಮೂಲ್ಯವಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್‌ಗೆ ಸೇರುವ ನನ್ನ ನಿರ್ಧಾರದಿಂದ ನಾನು ಸಂತೋಷವಾಗಿರಲು ಸಾಧ್ಯವಾಗಿದೆ.<br>
-                    "Oltowns made my dream of owning a supermarket a reality! Their comprehensive support and training have been invaluable. I couldn't be happier with my decision to join Oltowns."
+                    ಓಲ್ಟೌನ್‌ ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ಫ್ರ್ಯಾಂಚೈಸಿ ಯವರು ನನ್ನ ಕನಸನ್ನು ನನಸಾಗಿಸಿದರು! ಅವರ ಸಮಗ್ರ ಬೆಂಬಲ ಮತ್ತು ತರಬೇತಿಯು
+                    ಅಮೂಲ್ಯವಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್‌ಗೆ ಸೇರುವ ನನ್ನ ನಿರ್ಧಾರದಿಂದ ನಾನು ಸಂತೋಷವಾಗಿರಲು ಸಾಧ್ಯವಾಗಿದೆ.<br>
+                    "Oltowns made my dream of owning a supermarket a reality! Their comprehensive support and training
+                    have been invaluable. I couldn't be happier with my decision to join Oltowns."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="user-img" style="background-image: url(images/reviews/Narasimha.png)"> </div>
@@ -688,11 +614,16 @@
             </div>
             <div class="item">
               <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
                 <div class="text">
                   <p class="mb-4">
-                    ಒಲ್ಟೌನ್ಸ್‌ನ ಬೆಂಬಲವು ಮೊದಲ ದಿನದಿಂದ ನಂಬುವಂತಾಗಿದೆ, ಅವರ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಸಂಪನ್ಮೂಲಗಳು ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ನಡೆಸುವ ಸಂಕೀರ್ಣತೆಗಳನ್ನು ಮಾರ್ಗದರ್ಶನ ಮಾಡಲು ನನಗೆ ಸಹಾಯ ಮಾಡಿದೆ. ನಾವು ಮಹತ್ವಾಕಾಂಕ್ಷಿ ಉಧ್ಯಮಿಗಳಿಗೆ ಓಲ್ಟೌನ್ಸ್ ಅನ್ನು ಹೆಚ್ಚು ಶಿಫಾರಸ್ಸು ಮಾಡುತ್ತೇವೆ.<br>
-                    "The support from Oltowns has been incredible from day one. Their guidance and resources have helped me navigate the complexities of running a supermarket. I highly recommend Oltowns to aspiring entrepreneurs."
+                    ಒಲ್ಟೌನ್ಸ್‌ನ ಬೆಂಬಲವು ಮೊದಲ ದಿನದಿಂದ ನಂಬುವಂತಾಗಿದೆ, ಅವರ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಸಂಪನ್ಮೂಲಗಳು ಸೂಪರ್‌ಮಾರ್ಕೆಟ್
+                    ನಡೆಸುವ ಸಂಕೀರ್ಣತೆಗಳನ್ನು ಮಾರ್ಗದರ್ಶನ ಮಾಡಲು ನನಗೆ ಸಹಾಯ ಮಾಡಿದೆ. ನಾವು ಮಹತ್ವಾಕಾಂಕ್ಷಿ ಉಧ್ಯಮಿಗಳಿಗೆ ಓಲ್ಟೌನ್ಸ್
+                    ಅನ್ನು ಹೆಚ್ಚು ಶಿಫಾರಸ್ಸು ಮಾಡುತ್ತೇವೆ.<br>
+                    "The support from Oltowns has been incredible from day one. Their guidance and resources have helped
+                    me navigate the complexities of running a supermarket. I highly recommend Oltowns to aspiring
+                    entrepreneurs."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="user-img" style="background-image: url(images/reviews/Vijayalakshmi.png)"></div>
@@ -706,11 +637,15 @@
             </div>
             <div class="item">
               <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
                 <div class="text">
                   <p class="mb-4">
-                    ಓಲ್ಟೌನ್ಸ್‌ಗೆ ಸೇರುವುದು ನಾನು ಮಾಡಿದ ಅತ್ಯುತ್ತಮ ವ್ಯಾಪಾರದ ನಿರ್ಧಾರವಾಗಿದೆ. ಫ್ರಾಂಚೈಸಿ ಮಾದರಿಯು ತಡೆರಹಿತ ಮತ್ತು ಲಾಭದಾಯಕ ಪ್ರಭಾವಶಾಲಿಯಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್‌ನೊಂದಿಗೆ, ನನ್ನ ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ವ್ಯಾಪಾರವು ಅಭಿವೃದ್ಧಿ ಹೊಂದುತ್ತಿದೆ.<br>
-                    "Joining Oltowns was the best business decision I've ever made. The franchise model is seamless, and the profitability is impressive. With Oltowns, my supermarket business is thriving."
+                    ಓಲ್ಟೌನ್ಸ್‌ಗೆ ಸೇರುವುದು ನಾನು ಮಾಡಿದ ಅತ್ಯುತ್ತಮ ವ್ಯಾಪಾರದ ನಿರ್ಧಾರವಾಗಿದೆ. ಫ್ರಾಂಚೈಸಿ ಮಾದರಿಯು ತಡೆರಹಿತ ಮತ್ತು
+                    ಲಾಭದಾಯಕ ಪ್ರಭಾವಶಾಲಿಯಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್‌ನೊಂದಿಗೆ, ನನ್ನ ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ವ್ಯಾಪಾರವು ಅಭಿವೃದ್ಧಿ
+                    ಹೊಂದುತ್ತಿದೆ.<br>
+                    "Joining Oltowns was the best business decision I've ever made. The franchise model is seamless, and
+                    the profitability is impressive. With Oltowns, my supermarket business is thriving."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="user-img" style="background-image: url(images/reviews/Gopal.png)"></div>
@@ -724,11 +659,14 @@
             </div>
             <div class="item">
               <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
                 <div class="text">
                   <p class="mb-4">
-                    Oltowns' ಫ್ರಾಂಚೈಸಿ ಮಾದರಿಯು ತಡೆರಹಿತ ಮತ್ತು ಹೆಚ್ಚು ಲಾಭದಾಯಕವಾಗಿದೆ. ಅವರು ಒದಗಿಸುತ್ತಿರುವ ನಿರಂತರ ಬೆಂಬಲ ಮತ್ತು ಪರಿಣತಿಯು ನನ್ನ ಯಶಸ್ಸಿಗೆ ನಿರ್ಣಾಯಕವಾಗಿದೆ. ನಾನು ಓಲ್ಟೌನ್ಸ್ ಕುಟುಂಬದಲ್ಲಿ ಭಾಗವಾಗಲು ಕೃತಜ್ಞನಾಗಿದ್ದೇನೆ.<br>
-                    "Oltowns' franchise model is seamless and highly profitable. The ongoing support and expertise they provide have been crucial to my success. I'm grateful to be part of the Oltowns family."
+                    Oltowns' ಫ್ರಾಂಚೈಸಿ ಮಾದರಿಯು ತಡೆರಹಿತ ಮತ್ತು ಹೆಚ್ಚು ಲಾಭದಾಯಕವಾಗಿದೆ. ಅವರು ಒದಗಿಸುತ್ತಿರುವ ನಿರಂತರ ಬೆಂಬಲ ಮತ್ತು
+                    ಪರಿಣತಿಯು ನನ್ನ ಯಶಸ್ಸಿಗೆ ನಿರ್ಣಾಯಕವಾಗಿದೆ. ನಾನು ಓಲ್ಟೌನ್ಸ್ ಕುಟುಂಬದಲ್ಲಿ ಭಾಗವಾಗಲು ಕೃತಜ್ಞನಾಗಿದ್ದೇನೆ.<br>
+                    "Oltowns' franchise model is seamless and highly profitable. The ongoing support and expertise they
+                    provide have been crucial to my success. I'm grateful to be part of the Oltowns family."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="user-img" style="background-image: url(images/reviews/Chaithra.png)"></div>
@@ -742,11 +680,15 @@
             </div>
             <div class="item">
               <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
                 <div class="text">
                   <p class="mb-4">
-                    ಓಲ್ಟೌನ್ಸ್‌ಗೆ ನನ್ನ ಧನ್ಯವಾದಗಳು, ನನ್ನ ಸೂಪರ್ ಮಾರ್ಕೆಟ್ ಅಭಿವೃದ್ಧಿ ಹೊಂದುತ್ತಿದೆ! ಉತ್ಕೃಷ್ಟತೆ ಮತ್ತು ಗ್ರಾಹಕರ ತೃಪ್ತಿಗೆ ಅವರ ಬದ್ಧತೆ ಪ್ರತಿಯೊಂದು ಅಂಶದಲ್ಲೂ ಸ್ಪಷ್ಟವಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್ ಇಲ್ಲದೆ ನಾನು ಈ ಯಶಸ್ಸನ್ನು ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗುತಿರಲಿಲ್ಲ.<br>
-                    "Thanks to Oltowns, my supermarket is thriving! Their commitment to excellence and customer satisfaction is evident in every aspect. I couldn't have achieved this success without Oltowns."
+                    ಓಲ್ಟೌನ್ಸ್‌ಗೆ ನನ್ನ ಧನ್ಯವಾದಗಳು, ನನ್ನ ಸೂಪರ್ ಮಾರ್ಕೆಟ್ ಅಭಿವೃದ್ಧಿ ಹೊಂದುತ್ತಿದೆ! ಉತ್ಕೃಷ್ಟತೆ ಮತ್ತು ಗ್ರಾಹಕರ
+                    ತೃಪ್ತಿಗೆ ಅವರ ಬದ್ಧತೆ ಪ್ರತಿಯೊಂದು ಅಂಶದಲ್ಲೂ ಸ್ಪಷ್ಟವಾಗಿದೆ. ಓಲ್ಟೌನ್ಸ್ ಇಲ್ಲದೆ ನಾನು ಈ ಯಶಸ್ಸನ್ನು ಸಾಧಿಸಲು
+                    ಸಾಧ್ಯವಾಗುತಿರಲಿಲ್ಲ.<br>
+                    "Thanks to Oltowns, my supermarket is thriving! Their commitment to excellence and customer
+                    satisfaction is evident in every aspect. I couldn't have achieved this success without Oltowns."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="user-img" style="background-image: url(images/reviews/Nagarajan.png)"></div>
@@ -765,71 +707,60 @@
   </section>
 
   <section class="ftco-appointment ftco-section img" style="background-image: url(images/connet.jpeg);">
-		<div class="overlay"></div>
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-6 half ftco-animate">
-			  <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-			  <form action="https://formspree.io/f/xpwaqkqa" method="POST" class="appointment">
-				<div class="row">
-				  <div class="col-md-6">
-					<div class="form-group">
-					  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-					</div>
-				  </div>
-				  <div class="col-md-6">
-					<div class="form-group">
-					  <input type="email" name="_replyto" class="form-control" placeholder="Email" required>
-					</div>
-				  </div>
-				  <div class="col-md-12">
-					<div class="form-group">
-					  <div class="form-field">
-						<div class="select-wrap">
-						  <div class="icon"><span class="fa fa-chevron-down"></span></div>
-						  <select name="subject" id="" class="form-control" required>
-							<option value="Cafe">Cafe</option>
-							<option value="Supermarket">Supermarket</option>
-							<option value="Soup">Soup</option>
-						  </select>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-md-12">
-					<div class="form-group">
-					  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-					</div>
-				  </div>
-				  <div class="col-md-12">
-					<div class="form-group">
-					  <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-					</div>
-				  </div>
-				</div>
-			  </form>
-			</div>
-		  </div>
-		</div>
-	  </section>
-  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 half ftco-animate">
+          <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
+          <form action="https://formspree.io/f/xpwaqkqa" method="POST" class="appointment">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" name="_replyto" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                      <select name="subject" id="" class="form-control" required>
+                        <option value="Cafe">Cafe</option>
+                        <option value="Supermarket">Supermarket</option>
+                        <option value="Soup">Soup</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"
+                    required></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <footer class="ftco-footer">
     <div class="container">
       <div class="row mb-5">
-        <!-- 				
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2 logo"><a href="#">Contact Details</a></h2>
-						<p>Far far away, behind the word mountains, far from the countries.</p>
-						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div> 
-				 -->
+
         <div class="col-sm-12 col-md">
           <div class="ftco-footer-widget mb-4 ml-md-4">
             <h2 class="ftco-heading-2">Quick Link</h2>
@@ -890,7 +821,12 @@
           <div class="col-md-12">
 
             <p class="mb-0" style="color: rgba(255,255,255,.5);"> @2024 - <a href="https://adfluxagency.com">AdFlux
-                Agency</a> - All Rights Reserved</p>
+                Agency</a> - All Rights Reserved</p><a href="https://www.kodekalp.com" class="hidden-link">Design and
+              Developed by KodeKalp Global
+              Technologies</a>
+            <a href="https://ricecity.in" class="hidden-link">Gondia - The ricecity</a>
+            <a href="https://www.kodevedic.com" class="hidden-link">KodeVedic Edtech</a>
+            <a href="https://www.yourprojectcode.com" class="hidden-link">Your Project Code</a>
           </div>
         </div>
       </div>
@@ -901,12 +837,7 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
-    <!-- <svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-				
-		</svg> -->
+
     <img src="/images/klogo.gif" alt="Logo" class="loader-logo">
 
   </div>
