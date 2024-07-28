@@ -606,6 +606,35 @@ pre code {
   display: none;
 }
 
+.Noroyaltyimg{
+  border:none;
+}
+
+/* Custom styles for the image */
+.Noroyaltyimg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Adjust heading-section for smaller devices */
+@media (max-width: 768px) {
+  .heading-section {
+      padding: 15px;
+  }
+
+  .heading-section h2 {
+      font-size: 1.5rem;
+  }
+
+  .heading-section .subheading {
+      font-size: 1rem;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;
@@ -742,6 +771,8 @@ pre code {
   max-height: 70px;
   display: block; /* Ensures no extra space below the image */
 }
+
+
 /* Example media query for smaller screens */
 @media (max-width: 768px) {
   .navbar-brand img {
@@ -1140,6 +1171,8 @@ pre code {
 .offset-11 {
   margin-left: 91.66667%;
 }
+
+
 
 @media (min-width: 576px) {
   .col-sm {

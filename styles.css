@@ -98,12 +98,12 @@
 
 @media (max-width:500px) {
   .tranding-slide {
-    width: 28rem !important;
+    width: 32rem !important;
     height: 36rem !important;
   }
   .tranding-slide .tranding-slide-img img {
     width: 28rem !important;
-    height: 36rem !important;
+    height: 28rem !important;
   }
 }
 
@@ -162,6 +162,9 @@
 .tranding-slider-control .swiper-button-next {
   left: 58% !important;
   transform: translateX(-58%) !important;
+}
+.text-center h3 {
+  font-size: 20px;
 }
 
 @media (max-width:990px) {
